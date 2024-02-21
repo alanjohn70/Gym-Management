@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Payment
+    </title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/stop.css">
+    
+    <style>
+        body{
+     background-image: url("images/wp6230160-payment-wallpapers.png");
+   }
+     </style>
+</head>
+<body background="images\wp6230160-payment-wallpapers.png">
+   
+      
+<div class="container">
+
+    <form action="receipt.php" method="post">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">billing address</h3>
+
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" placeholder="" name="fname" required>
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" placeholder="example@example.com" name="email" required>
+                </div>
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" placeholder="room - street - locality" name="address" required>
+                </div>
+                <div class="inputBox">
+                    <span>city :</span>
+                    <input type="text" placeholder="" name="city" required>
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>state :</span>
+                        <input type="text" placeholder="" name="state" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>Amount:</span>
+                        <input type="text"  maxlength="10" minlength="0" placeholder="" name="zip" required>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">payment</h3>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="img\companies-logos.jpg" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" name="cname" required>
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="tel" inputmode="numeric" pattern="[0-9\s]{12,12}" autocomplete="cc-number" maxlength="12" placeholder="xxxx xxxx xxxx xxxx"  name="ccnumber" required>
+                </div>
+                <div class="inputBox">
+                    <span>exp month :</span>
+                    <input type="tel" inputmode="numeric"  pattern="[0-9\s]{1,12}"  maxlength="12" name="exp month" required>
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>exp year :</span>
+                        <input type="number"  placeholder="YYYY" min="2023" max="4000" name="exp year" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="min" maxlength="3" placeholder="xxx" name="CVV" required>
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+        
+        <input type="submit" value="Pay" class="submit-btn">
+         
+    </form>
+
+</div>    
+    
+</body>
+</html>
