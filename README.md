@@ -6,3 +6,4 @@ Admin is basically manages all the package that provided by the owner and also b
 Registerd can see how many packages are there in the website that was provided by the admin also one of the key feature sof this project was there is health recommendation system where user is giving input as age, height and
 weight. Based on these input system is recoomending what all workout you should take and what all diet you should follow.
 
+
